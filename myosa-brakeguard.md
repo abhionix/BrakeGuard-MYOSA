@@ -53,11 +53,11 @@ The project demonstrates a low-cost approach to condition-based brake-fluid moni
 ### Videos
 
 <video controls width="100%">
-  <source src="myosa-demovideo.mp4" type="video/mp4">
+  <source src="/myosa-demovideo.mp4" type="video/mp4">
 </video>
 
 <video controls width="100%">
-  <source src="myosa-demovideo2.mp4" type="video/mp4">
+  <source src="/myosa-demovideo2.mp4" type="video/mp4">
 </video>
 
 ---
