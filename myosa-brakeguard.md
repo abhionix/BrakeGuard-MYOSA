@@ -55,10 +55,12 @@ The project demonstrates a low-cost approach to condition-based brake-fluid moni
 <video controls width="100%">
   <source src="/myosa-demovideo.mp4" type="video/mp4">
 </video>
+<p align="center"><i>BrakeGuard - overall setup video</i></p>
 
 <video controls width="100%">
   <source src="/myosa-demovideo2.mp4" type="video/mp4">
 </video>
+<p align="center"><i>BrakeGuard - demo video</i></p>
 
 ---
 
