@@ -1,4 +1,3 @@
-
 //BrakeGuard Firmware — MYOSA 6.0 (MYOSA-native version)
 
 #include <myosa.h>
@@ -12,22 +11,21 @@ MYOSA myosa;
 // =============================================================================
 
 // ---- Feature toggles -------------------------------------------------------
-#define SIMULATE_PROBE          0   // 1 = fake capacitance data (no probe wired yet)
+#define SIMULATE_PROBE          0   // 1 = fake capacitance data (no probe wired yet)_for testing
 #define ENABLE_WIFI_MQTT        0   // set 0 to skip WiFi/MQTT for bench testing
-#define ENABLE_BLE_APP          0   // myosa.begin() starts BLE server regardless;                
+#define ENABLE_BLE_APP          0   // myosa.begin() starts BLE server regardless;
 
 // ---- Buzzer: direct GPIO (see BUZZER NOTE above) ----------------------------
 #define BUZZER_PIN    4     
-                            
 
-// ---- Capacitive probe RC circuit pins — PLACEHOLDERS until probe hardware exists.
+// ---- Capacitive probe RC circuit pins ---------------------------------------
 #define PROBE_CHARGE_PIN   25
 #define PROBE_READ_PIN     26
 
-// ---- WiFi / MQTT config -------------------------------------------------------
+// ---- WiFi / MQTT config -----------------------------------------------------
 const char* WIFI_SSID     = "YOUR_WIFI_SSID";       
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";   
-const char* MQTT_BROKER   = "broker.hivemq.com"; 
+const char* MQTT_BROKER   = "broker.hivemq.com";    
 const int   MQTT_PORT     = 1883;
 const char* MQTT_CLIENT_ID = "BrakeGuard_ESP32";
 const char* MQTT_TOPIC_STATE = "brakeguard/state";
@@ -35,7 +33,7 @@ const char* MQTT_TOPIC_STATE = "brakeguard/state";
 WiFiClient espClient;
 PubSubClient mqttClient(espClient);
 
-// ---- Calibration constants — ALL PLACEHOLDERS --------------------------------
+// ---- Calibration constants --------------------------------
 // Linear model: moisture% = CAL_A * rawReading(us) + CAL_B
 float CAL_A = 0.0f;
 float CAL_B = 0.0f;
